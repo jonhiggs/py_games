@@ -3,10 +3,10 @@ import random
 import time
 
 def displayIntro():
-    print(''' \nYou are in a land filled with MONSTERS. In front
-of you you see two caves. One cave houses a FRIENDLY monster,
-that will share cake and balloons with you. The OTHER cave
-though... houses an EVIL monster that will eat you on sight.\n''')
+    print('''\nYou are in a land filled with MONSTERS. In front of you you see
+            two caves. One cave houses a FRIENDLY monster, that will share cake 
+            and balloons with you. The OTHER cave though... houses an EVIL
+            monster that will eat you on sight.\n''')
 
 def chooseCave():
     cave = 0   # TODO: work out how to make this not needed. There will be a way.
