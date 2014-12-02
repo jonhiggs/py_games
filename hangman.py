@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 #Code for the game "Hangman", inspired by the book "Invent with Python"
