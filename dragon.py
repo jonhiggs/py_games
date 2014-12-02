@@ -9,12 +9,11 @@ that will share cake and balloons with you. The OTHER cave
 though... houses an EVIL monster that will eat you on sight.\n''')
 
 def chooseCave():
-    cave = raw_input("Do you choose cave 1 or 2? ")
+    cave = 0   # TODO: work out how to make this not needed. There will be a way.
+    while cave != 1 and cave != 2:
+        cave = int(raw_input("Do you choose cave 1 or 2? "))
 
-    if cave == "1" or cave == "2":
-        return checkCave(int(cave))
-    else:
-        chooseCave()
+    return checkCave(cave)
 
 def checkCave(chosenCave):
     print('You approach the cave...')
