@@ -32,8 +32,7 @@ def checkCave(chosenCave):
 
 play_again = True
 
-while play_again == True:
-
+while play_again:
     displayIntro()
     chooseCave()
     play = raw_input("Do you want to play again? (y)es or (n)o: ")
