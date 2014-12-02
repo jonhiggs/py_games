@@ -3,10 +3,12 @@ import random
 
 computer_guess = random.randint(1,20)
 guess_total = 0
+tries = 6
 
 name = raw_input("What is your name? ")
 
-print("Hello %s! Please guess the number between 1 and 20. You get 6 tries" %name)
+print("Hello %s! Please guess the number between 1 and 20." %(name) )
+print("You get %s tries" %(tries) )
 
 while guess_total < 6 :
     guess = int(raw_input("take a guess: " ))
