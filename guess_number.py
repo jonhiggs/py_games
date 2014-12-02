@@ -6,7 +6,7 @@ guess_total = 0
 
 name = raw_input("What is your name? ")
 
-print("Hello %s ! Please guess the number between 1 and 20. You get 6 tries" %name)
+print("Hello %s! Please guess the number between 1 and 20. You get 6 tries" %name)
 
 while guess_total < 6 :
     guess = int(raw_input("take a guess: " ))
