@@ -10,7 +10,7 @@ name = raw_input("What is your name? ")
 print("Hello %s! Please guess the number between 1 and 20." %(name) )
 print("You get %s tries" %(tries) )
 
-while guess_total < 6 :
+while guess_total < tries :
     guess = int(raw_input("take a guess: " ))
     guess_total += 1
 
