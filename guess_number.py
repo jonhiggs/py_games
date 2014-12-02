@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import random
 
-computer_guess = random.randint(1,20)
+COMPUTER_GUESS = random.randint(1,20)
 guess_total = 0
 tries = 6
 
@@ -14,16 +14,16 @@ while guess_total < tries :
     guess = int(raw_input("take a guess: " ))
     guess_total += 1
 
-    if guess < computer_guess:
+    if guess < COMPUTER_GUESS:
         print("Too low!")
-    elif guess > computer_guess:
+    elif guess > COMPUTER_GUESS:
         print("Too high!")
-    elif guess == computer_guess:
+    elif guess == COMPUTER_GUESS:
         break
     else:
         print("oops, something went wrong")
 
-if guess == computer_guess:
+if guess == COMPUTER_GUESS:
     print("YESSSSS %s, you won, and it only took you %s guesses" %(name,guess_total))
 else:
-    print("You lose, the number I was thinking of was %s" %(computer_guess) )
+    print("You lose, the number I was thinking of was %s" %(COMPUTER_GUESS) )
