@@ -3,7 +3,6 @@ import random
 from sys import exit
 
 COMPUTER_GUESS = 3 #random.randint(1,20)
-guess_total = 0
 TRIES = 6
 
 # TODO: name should be constant.
