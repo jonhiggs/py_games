@@ -24,4 +24,4 @@ while guess_total < 6 :
 if guess == computer_guess:
     print("YESSSSS %s, you won, and it only took you %s guesses" %(name,guess_total))
 else:
-    print("You lose, the number I was thinking of was %s" s%computer_guess)
+    print("You lose, the number I was thinking of was %s", s%(computer_guess) )
