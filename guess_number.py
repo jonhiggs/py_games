@@ -10,7 +10,7 @@ print("Hello %s ! Please guess the number between 1 and 20. You get 6 tries" %na
 while guess_total < 6 :
 	guess = int(raw_input("take a guess: " ))
 	guess_total += 1
-	 
+
 	if guess < computer_guess:
 		print("Too low!")
 	elif guess > computer_guess:
@@ -19,7 +19,7 @@ while guess_total < 6 :
 		break
 	else:
 		print("oops, something went wrong")
-		
+
 if guess == computer_guess:
 	print("YESSSSS %s, you won, and it only took you %s guesses" %(name,guess_total))
 else:
