@@ -2,7 +2,7 @@
 import random
 from sys import exit
 
-COMPUTER_GUESS = 3 #random.randint(1,20)
+COMPUTER_GUESS = random.randint(1,20)
 TRIES = 6
 NAME = raw_input("What is your name? ")
 
