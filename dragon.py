@@ -11,10 +11,10 @@ though... houses an EVIL monster that will eat you on sight.\n''')
 def chooseCave():
     cave = raw_input("Do you choose cave 1 or 2? ")
 
-    if cave != "1" and cave != "2":
-        chooseCave()
-    else:
+    if cave == "1" or cave == "2":
         return checkCave(int(cave))
+    else:
+        chooseCave()
 
 def checkCave(chosenCave):
     print('You approach the cave...')
