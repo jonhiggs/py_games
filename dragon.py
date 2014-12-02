@@ -23,6 +23,15 @@ def checkCave(chosenCave):
     print('A large monster out in front of you! He opens his jaws and... \n')
     sleep(2)
 
+    # XXX: another way could be like this
+    # It's debatable whether this is better. On one hand it's shorter and uses
+    # less variables. On the other, it obfuscates away the intention.
+    #
+    # if randint(0,1) == 0:
+    #     print("Showers you with champagne! Good choice young one!\n")
+    # else:
+    #     print("EATS YOU UP AND SPITS YOU OUT!\n")
+
     friendlyCave = randint(1,2)
 
     if chosenCave == friendlyCave:
