@@ -24,6 +24,6 @@ def guess(number, attempt):
         exit()
 
 for attempt in xrange(tries):
-    guess(int(raw_input("take a guess: ")), attempt)
+    guess(int(raw_input("take a guess: ")), attempt+1)
 
 print("You lose, the number I was thinking of was %s" %(COMPUTER_GUESS) )
