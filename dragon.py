@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-import random
-import time
+from random import randint
+from time import sleep
 
 def displayIntro():
     print('''\nYou are in a land filled with MONSTERS. In front of you you see
@@ -17,13 +17,13 @@ def chooseCave():
 
 def checkCave(chosenCave):
     print('You approach the cave...')
-    time.sleep(3)
+    sleep(3)
     print('It is dark and spooky...')
-    time.sleep(3)
+    sleep(3)
     print('A large monster out in front of you! He opens his jaws and... \n')
-    time.sleep(2)
+    sleep(2)
 
-    friendlyCave = random.randint(1,2)
+    friendlyCave = randint(1,2)
 
     if chosenCave == friendlyCave:
         print("Showers you with champagne! Good choice young one!\n")
