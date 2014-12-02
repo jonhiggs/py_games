@@ -4,8 +4,6 @@ from sys import exit
 
 COMPUTER_GUESS = 3 #random.randint(1,20)
 TRIES = 6
-
-# TODO: name should be constant.
 NAME = raw_input("What is your name? ")
 
 print("Hello %s! Please guess the number between 1 and 20." %(NAME) )
