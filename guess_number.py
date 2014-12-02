@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import random
 
 computer_guess = random.randint(1,20)
