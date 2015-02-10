@@ -45,7 +45,7 @@ class Board(object):
             
     # this function will be redundant - we can make a new board object to try move
     def get_copy_board(self):
-        return copy.copy(self)
+        return copy.deepcopy(self)
 
 
     def win(self, player):
