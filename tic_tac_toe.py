@@ -47,6 +47,18 @@ class Board(object):
     def get_copy_board(self):
         return copy.deepcopy(self)
 
+    def row(self, n):
+        offset = (n*3)
+        r = []
+        for position in range(0,3):
+            r.append(self.board[offset+position])
+        return r
+
+    def matrix(self):
+        m = []
+        for r in range(0,3):
+            m.append(self.row(r))
+        return m
 
     def win(self, player):
         return ((self.board[0] == self.board[1] == self.board[2] == player) or
