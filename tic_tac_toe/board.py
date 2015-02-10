@@ -1,39 +1,13 @@
-from random import randint
+from game import *
 
-class Board(object):
-#A Tic-Tac-Toe Board
-    def __init__(self):
-        # create a list like this ' ' * 9
-        self._player_token = None
-        self._player_turn = ( randint(0,1) == 0 )
-        self.board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-
+class Board(Game):
     @property
-    def player_token(self):
-        return self._player_token
-
-    @player_token.setter
-    def player_token(self, value):
-        # add an exception if token is invalid.
-        value = value.upper()
-        if value == "X" or value == "O":
-            self._player_token = value
-
-    @property
-    def ai_token(self):
-        if self._player_token == "X":
-            return "O"
+    def position_available(self, position):
+        positions = Game.players[0] | Game.players[1]
+        if (self._postions & (1 << position) ) != 0:
+            return False
         else:
-            return "X"
-
-
-    @property
-    def player_turn(self):
-        return self._player_turn
-
-    @player_turn.setter
-    def player_turn(self, value):
-        self._player_turn = bool(value)
+            return True
 
 
 

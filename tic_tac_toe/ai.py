@@ -1,5 +1,7 @@
 class AI(object):
 
+    computer_thinking = 0.1
+
     def move(board, letter):
         if letter == 'X':
             p_letter = 'O'

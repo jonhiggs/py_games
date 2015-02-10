@@ -4,15 +4,7 @@
 from time import sleep
 import copy
 
-from ai import *
-from player import *
-from board import *
-
-# class Game():
-#   pass 
-
-play_again = True
-computer_thinking = 0.1
+from game import *
 
 
 def print_example_board():
@@ -33,32 +25,32 @@ def print_example_board():
 '''
 
 # Main part of game
-while play_again:
+while True:
     # Do the setup - part of every new game
     print "\nWelcome to Tic Tac Toe! \n"
-    board = Board()
+    game = Game()
 
-    while True:
-        board.player_token = raw_input('Do you want to play "X" or "O"?: ')
-        if board.player_token: break
+    #while True:
+    #    board.player_token = raw_input('Do you want to play "X" or "O"?: ')
+    #    if board.player_token: break
 
-    #player = Player()
-    #ai = AI
+    ##player = Player()
+    ##ai = AI
 
-    print "Player is %s, computer is %s" % (board.player_token, board.ai_token)
-    print ("\n")
-    print_example_board()
-    print ("\n")
-    print "Computer will randomly decided who will make the first move..."
-    sleep(computer_thinking)
+    #print "Player is %s, computer is %s" % (board.player_token, board.ai_token)
+    #print ("\n")
+    #print_example_board()
+    #print ("\n")
+    #print "Computer will randomly decided who will make the first move..."
+    #sleep(computer_thinking)
 
-    if board.player_turn:
-        turn = "Player"
-    else:
-        turn = "AI"
-    print "%s will make the first move" % turn
+    #if board.player_turn:
+    #    turn = "Player"
+    #else:
+    #    turn = "AI"
+    #print "%s will make the first move" % turn
 
-    sleep(computer_thinking)
+    #sleep(computer_thinking)
     #Draw board & get computer and player feedback until
     #one player wins or there is a tie
 
